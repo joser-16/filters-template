@@ -1,0 +1,64 @@
+$max-width    : 1400px;
+$default-fz   : 16px;
+$border-radius: .5rem;
+$columns      : 12;
+$layout-rule  : 8;
+
+//Breakpoints
+$breakpoints: (sm: 600px,
+  md: 960px,
+  lg: 1024px,
+  xl: 1280px);
+
+:root {
+  //Layout
+  --header-height: 4rem;
+  --grid-gap     : 1rem;
+
+  //Colors
+  --background            : #f5faff;
+  --primary-color         : #347bff;
+  --surface-high          : #fff;
+  --surface-medium        : rgba(0, 0, 0, 5%);
+  --surface-low           : rgba(0, 0, 0, 4%);
+  --text-emphasis-disabled: rgba(0, 0, 0, 38%);
+  --text-emphasis-medium  : rgba(0, 0, 0, 60%);
+  --text-emphasis-high    : rgba(0, 0, 0, 87%);
+  --divider-color         : rgba(115, 178, 253, 10%);
+  --selected-blue         : #dcecfe;
+  --accent-green          : #009b5a;
+  --accent-lightblue      : #73b2fd;
+  --error-color           : #ee5252;
+  --error-input-color     : rgba(238, 82, 82, 10%);
+  --filled-input-color    : #f5faff;
+
+  //Z-indexs
+  --z-back   : -10;
+  --z-normal : 1;
+  --z-tooltip: 10;
+  --z-fixed  : 100;
+  --z-modal  : 1000;
+
+  //Font family
+  --font-family: 'Poppins', sans-serif;
+
+  //Font sizes
+  --fz-h1   : 2em;
+  --fz-h2   : 1.5em;
+  --fz-h3   : 1.25em;
+  --fz-body : 1em;
+  --fz-small: .75em;
+  --fz-tiny : .5em;
+
+  @media screen and (min-width: map-get($breakpoints, sm)) {
+    --fz-h1: 2.5em;
+    --fz-h2: 2em;
+    --fz-h3: 1.5em;
+  }
+
+  //Font weight
+  --fw-light  : 300;
+  --fw-regular: 400;
+  --fw-medium : 500;
+  --fw-bold   : 700;
+}

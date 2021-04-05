@@ -1,0 +1,38 @@
+.card {
+  @include card;
+
+  &--featured {
+    background: var(--selected-blue);
+    border: 2px solid var(--accent-lightblue);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.h-card {
+  @include card;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  @include mq(md) {
+    text-align: left;
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  &--featured {
+    background: var(--selected-blue);
+    border: 2px solid var(--accent-lightblue);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}

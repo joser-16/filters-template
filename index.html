@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Filtros</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header bg-white">
+      <div class="container header__block">
+        <div class="header__logo">
+          <p class="header__text">Logo</p>
+        </div>
+
+        <div class="menu-btn js-menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+
+        <nav class="nav js-menu">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Item 1</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Item 2</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Item 3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <section class="container mt-8">
+        <div class="l-grid flex-items-center">
+          <div class="l-col-12 l-col-sm-8 l-col-md-10">
+            <h2 class="my-2 fw-medium"> <span class="badge badge-success">23</span> Resultados</h2>
+          </div>
+          <div class="l-col-12 l-col-sm-4 l-col-md-2">
+            <form action="" class="form flex flex-items-center">
+              <svg class="icon icon-success mr-1"><use href="assets/icons/icons.svg#money"/></svg>
+              <select name="" class="form__input form__input--select">
+                <option value="">USD</option>
+                <option value="">EUR</option>
+                <option value="">MXN</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="divider mb-4"></div>
+      </div>
+
+      <section class="container">
+        <div class="l-grid l-grid-double-gap-md">
+          <aside class="l-col-12 l-col-md-4">
+            <div class="flex flex-items-center mb-2">
+              <svg class="icon icon-high-emphasis mr-1"><use href="assets/icons/icons.svg#filter"/></svg>
+              <h3 class="m-0">Filtros</h3>
+            </div>
+            <div class="card mb-4">
+              <div class="card__title flex flex-items-center">
+                <svg class="icon mr-1"><use href="assets/icons/icons.svg#price"/></svg>
+                <h3 class="m-0">Precio <span class="fz-small fw-light">— (USD)</span></h3>
+              </div>
+
+              <div class="divider mb-2"></div>
+              
+              <form class="form js-form-price">
+                <div class="l-grid">
+                  <div class="l-col-6">
+                    <div class="form__group">
+                      <input class="form__input" type="number" placeholder="Precio mínimo">
+                    </div>
+                  </div>
+                  <div class="l-col-6">
+                    <div class="form__group">
+                      <input class="form__input" type="number" placeholder="Precio máximo">
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="button button-success d-block wt-50 md-wt-100 mt-2">Aplicar precio</button>
+                </div>
+              </form>
+            </div>
+          </aside>
+          <div class="l-col-12 l-col-md-8">
+            <article class="h-card h-card--featured mb-4">
+              <div class="h-card__image p-1">
+                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+              </div>
+              <div class="h-card__content p-1">
+                <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
+                <p class="text-emphasis-medium paragraph-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi incidunt expedita ipsa eligendi perferendis molestias. Aliquam repellat blanditiis accusantium magni?
+                </p>
+              </div>
+
+              <div class="flex flex-column flex-between p-1 h-100 text-center">
+                <p class="fz-h3 fw-bold">39.99$ <span class="fz-small fw-regular">/ mes</span></p>
+                <a href="#" class="button button-success">
+                  <div class="flex flex-center flex-items-center">
+                    Detalles
+                    <svg class="button__icon ml-1"><use href="assets/icons/icons.svg#arrow"/></svg>     
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="h-card mb-4">
+              <div class="h-card__image p-1">
+                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+              </div>
+              <div class="h-card__content p-1">
+                <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
+                <p class="text-emphasis-medium paragraph-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi incidunt expedita ipsa eligendi perferendis molestias. Aliquam repellat blanditiis accusantium magni?
+                </p>
+              </div>
+
+              <div class="flex flex-column flex-between p-1 h-100 text-center">
+                <p class="fz-h3 fw-bold">39.99$ <span class="fz-small fw-regular">/ mes</span></p>
+                <a href="#" class="button button-success">
+                  <div class="flex flex-center flex-items-center">
+                    Detalles
+                    <svg class="button__icon ml-1"><use href="assets/icons/icons.svg#arrow"/></svg>     
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="h-card mb-4">
+              <div class="h-card__image p-1">
+                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+              </div>
+              <div class="h-card__content p-1">
+                <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
+                <p class="text-emphasis-medium paragraph-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi incidunt expedita ipsa eligendi perferendis molestias. Aliquam repellat blanditiis accusantium magni?
+                </p>
+              </div>
+
+              <div class="flex flex-column flex-between p-1 h-100 text-center">
+                <p class="fz-h3 fw-bold">39.99$ <span class="fz-small fw-regular">/ mes</span></p>
+                <a href="#" class="button button-success">
+                  <div class="flex flex-center flex-items-center">
+                    Detalles
+                    <svg class="button__icon ml-1"><use href="assets/icons/icons.svg#arrow"/></svg>     
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="h-card mb-4">
+              <div class="h-card__image p-1">
+                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+              </div>
+              <div class="h-card__content p-1">
+                <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
+                <p class="text-emphasis-medium paragraph-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi incidunt expedita ipsa eligendi perferendis molestias. Aliquam repellat blanditiis accusantium magni?
+                </p>
+              </div>
+
+              <div class="flex flex-column flex-between p-1 h-100 text-center">
+                <p class="fz-h3 fw-bold">39.99$ <span class="fz-small fw-regular">/ mes</span></p>
+                <a href="#" class="button button-success">
+                  <div class="flex flex-center flex-items-center">
+                    Detalles
+                    <svg class="button__icon ml-1"><use href="assets/icons/icons.svg#arrow"/></svg>     
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

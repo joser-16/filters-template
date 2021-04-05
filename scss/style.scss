@@ -1,0 +1,24 @@
+// 1. Variables
+@import "config/variables";
+@import "config/functions";
+@import "config/mixins";
+
+// 2. Base styles (Normalize)
+@import "base/base";
+
+// 3. Layout styles
+@import "layout/layout";
+@import "layout/grid-system";
+
+// 4. Theme
+@import "theme/theme";
+
+// 5. Components
+@import "components/header";
+@import "components/menu";
+@import "components/icon";
+@import "components/burger-menu";
+@import "components/button";
+@import "components/card";
+@import "components/form";
+@import "components/badge";

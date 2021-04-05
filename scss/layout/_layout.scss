@@ -1,0 +1,370 @@
+$container-padding: 1rem;
+
+.container {
+	max-width: $max-width;
+	padding  : 0 $container-padding;
+	margin   : 0 auto;
+	display  : flex;
+	flex-wrap: wrap;
+}
+
+.section {
+	padding-top: 6rem;
+}
+
+.wt {
+  @include width-sizes;
+
+	// Controlled custom width
+	&-auto {
+		--width: calc(100% - #{$container-padding});
+
+		@include mq(sm) {
+			--width: 75%;
+		}
+
+		@include mq(lg) {
+			--width: 50%;
+		}
+
+		width: var(--width);
+	}
+}
+
+.h-100 {
+  height: 100%;
+}
+
+@include mq(sm) {
+	.sm-wt {
+    @include width-sizes;
+
+		// Controlled custom width
+		&-auto {
+			--width: calc(100% - #{$container-padding});
+
+			@include mq(sm) {
+				--width: 75%;
+			}
+
+			@include mq(lg) {
+				--width: 50%;
+			}
+
+			width: var(--width);
+		}
+
+		&-none {
+			width: auto;
+		}
+	}
+}
+
+@include mq(lg) {
+	.lg-wt {
+    @include width-sizes;
+
+		// Controlled custom width
+		&-auto {
+			--width: calc(100% - #{$container-padding});
+
+			@include mq(sm) {
+				--width: 75%;
+			}
+
+			@include mq(lg) {
+				--width: 50%;
+			}
+
+			width: var(--width);
+		}
+
+		&-none {
+			width: auto;
+		}
+	}
+}
+
+@include mq(md) {
+	.md-wt {
+    @include width-sizes;
+
+		// Controlled custom width
+		&-auto {
+			--width: calc(100% - #{$container-padding});
+
+			@include mq(sm) {
+				--width: 75%;
+			}
+
+			@include mq(lg) {
+				--width: 50%;
+			}
+
+			width: var(--width);
+		}
+
+		&-none {
+			width: auto;
+		}
+	}
+}
+
+/* 
+    &#{t}-#{i} is equal to .mt-#{number} or mt-1
+    Next are the same, only changes margin direction (mb, mr, ml)
+*/
+.m {
+  &-0 {
+    margin: 0;
+  }
+  
+	@for $i from 1 through 8 {
+		&#{t}-#{$i} {
+			margin-top: px-rem($i * $layout-rule * 1px);
+		}
+
+		&#{b}-#{$i} {
+			margin-bottom: px-rem($i * $layout-rule * 1px);
+		}
+
+		&#{l}-#{$i} {
+			margin-left: px-rem($i * $layout-rule * 1px);
+		}
+
+		&#{r}-#{$i} {
+			margin-right: px-rem($i * $layout-rule * 1px);
+		}
+		&#{x}-#{$i} {
+			margin-right: px-rem($i * $layout-rule * 1px);
+			margin-left: px-rem($i * $layout-rule * 1px);
+		}
+		&#{y}-#{$i} {
+			margin-top: px-rem($i * $layout-rule * 1px);
+			margin-bottom: px-rem($i * $layout-rule * 1px);
+		}
+	}
+}
+
+.p {
+  &-0 {
+    padding: 0;
+  }
+  
+	@for $i from 1 through 8 {
+    &-#{$i} {
+      padding: px-rem($i * $layout-rule * 1px);
+    }
+
+		&#{t}-#{$i} {
+			padding-top: px-rem($i * $layout-rule * 1px);
+		}
+
+		&#{b}-#{$i} {
+			padding-bottom: px-rem($i * $layout-rule * 1px);
+		}
+
+		&#{l}-#{$i} {
+			padding-left: px-rem($i * $layout-rule * 1px);
+		}
+
+		&#{r}-#{$i} {
+			padding-right: px-rem($i * $layout-rule * 1px);
+		}
+		&#{x}-#{$i} {
+			padding-right: px-rem($i * $layout-rule * 1px);
+			padding-left: px-rem($i * $layout-rule * 1px);
+		}
+		&#{y}-#{$i} {
+			padding-top: px-rem($i * $layout-rule * 1px);
+			padding-bottom: px-rem($i * $layout-rule * 1px);
+		}
+	}
+}
+
+.center-block {
+	margin-left : auto;
+	margin-right: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.d-block {
+	display: block;
+
+  @include mq(sm) {
+    &-sm {
+      display: block;
+    }
+  }
+  @include mq(md) {
+    &-md {
+      display: block;
+    }
+  }
+  @include mq(lg) {
+    &-lg {
+      display: block;
+    }
+  }
+}
+
+.d-none {
+  display: none;
+
+  @include mq(sm) {
+    &-sm {
+      display: none;
+    }
+  }
+  @include mq(md) {
+    &-md {
+      display: none;
+    }
+  }
+  @include mq(lg) {
+    &-lg {
+      display: none;
+    }
+  }
+}
+
+.flex {
+	display: flex;
+
+	&-wrap {
+		flex-wrap: wrap;
+	}
+
+	&-between {
+		justify-content: space-between;
+	}
+
+	&-center {
+		justify-content: center;
+	}
+
+	&-end {
+		justify-content: flex-end;
+	}
+
+	&-start {
+		justify-content: flex-start;
+	}
+
+	&-around {
+		justify-content: space-around;
+	}
+
+	&-evenly {
+		justify-content: space-evenly;
+	}
+
+	&-items-center {
+		align-items: center;
+	}
+
+  &-column {
+    flex-direction: column;
+  }
+}
+
+@include mq(sm) {
+	.sm-flex {
+		display: flex;
+
+		&-wrap {
+			flex-wrap: wrap;
+		}
+
+		&-between {
+			justify-content: space-between;
+		}
+
+		&-center {
+			justify-content: center;
+		}
+
+		&-end {
+			justify-content: flex-end;
+		}
+
+		&-start {
+			justify-content: flex-start;
+		}
+
+		&-around {
+			justify-content: space-around;
+		}
+
+		&-evenly {
+			justify-content: space-evenly;
+		}
+
+		&-items-center {
+			align-items: center;
+		}
+	}
+}
+
+.fixed {
+	position: fixed;
+}
+
+.z-back {
+	z-index: var(--z-back);
+}
+
+.z-normal {
+	z-index: var(--z-normal);
+}
+
+.z-tooltip {
+	z-index: var(--z-tooltip);
+}
+
+.z-fixed {
+	z-index: var(--z-fixed);
+}
+
+.z-modal {
+	z-index: var(--z-modal);
+}
+
+.full-height {
+	height: 100vh;
+}
+
+.divider {
+  height: px-rem(3px);
+  width: 100%;
+  background: var(--divider-color);
+}
+
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.paragraph {
+  @for $i from 1 through 10 {
+    &-#{$i} {
+      display: -webkit-box;
+      -webkit-line-clamp: #{$i};
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

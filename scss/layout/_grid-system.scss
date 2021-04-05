@@ -1,0 +1,40 @@
+.l-grid {
+	@include grid-system;
+
+	@include mq(sm) {
+		&-sm {
+			@include grid-system;
+		}
+	}
+	@include mq(md) {
+		&-md {
+			@include grid-system;
+		}
+	}
+	@include mq(lg) {
+		&-lg {
+			@include grid-system;
+		}
+	}
+
+  @include mq(md) {
+    &-double-gap-md {
+      grid-gap: calc( var(--grid-gap) * 2 );
+    }
+  }
+}
+
+
+@include columns(l-col);
+
+@include mq(sm) {
+  @include columns(l-col-sm);
+}
+
+@include mq(md) {
+  @include columns(l-col-md);
+}
+
+@include mq(lg) {
+  @include columns(l-col-lg);
+}

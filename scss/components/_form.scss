@@ -1,0 +1,66 @@
+.form {
+  &__group {
+    display: block;
+  }
+
+  &__error-message {
+    color        : var(--error-color);
+    font-size    : .75em;
+    margin-bottom: .5rem;
+  }
+
+  &__label {
+    color: var(--text-emphasis-high);
+  }
+
+  &__input {
+    margin-bottom: .5rem;
+    background   : var(--surface-high);
+    font-family  : inherit;
+    width        : 100%;
+    padding      : 0 1rem;
+    border-radius: .25rem;
+    outline      : none;
+    border       : none;
+    border       : 1px solid var(--text-emphasis-disabled);
+    color        : var(--text-emphasis-medium);
+    height       : px-rem(48px);
+  }
+
+  &__input:invalid {
+    color       : var(--error-color);
+    border-color: var(--error-color);
+    background  : var(--error-input-color);
+  }
+
+  &__input--error {
+    color       : var(--error-color);
+    border-color: var(--error-color);
+    background  : var(--error-input-color);
+  }
+
+  &__input--filled {
+    border-color: var(--accent-lightblue);
+    background  : var(--filled-input-color);
+  }
+
+  &__input--textarea {
+    min-height: px-rem(64px);
+    height    : px-rem(128px);
+    resize    : vertical;
+  }
+
+  &__input--select {
+    -moz-appearance    : none;
+    -webkit-appearance : none;
+    appearance         : none;
+    background-image   : url('/assets/icons/arrow-down.svg');
+    background-repeat  : no-repeat, repeat;
+    background-position: right 1rem top 50%, 0 0;
+    background-size    : .75em auto, 100%;
+  }
+
+  &__input::placeholder {
+    color: var(--text-emphasis-disabled);
+  }
+}

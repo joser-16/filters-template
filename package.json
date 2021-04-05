@@ -1,0 +1,23 @@
+{
+  "name": "jd-scss-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate de scss para proyectos personales. Include mixins, functions y patterns",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx node-sass -w scss/ -o css/",
+    "build": "npx node-sass scss/ -o css/ --output-style compressed",
+    "wp.dev": "npx node-sass -w scss/ -o .",
+    "wp.build": "npx node-sass scss/ -o . --output-style compressed"
+  },
+  "keywords": [
+    "boilerplate",
+    "scss",
+    "css",
+    "sass"
+  ],
+  "author": "joser-16",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

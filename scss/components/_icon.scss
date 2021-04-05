@@ -1,0 +1,17 @@
+.icon {
+    min-width: px-rem(32px);
+    min-height: px-rem(32px);
+    width: px-rem(32px);
+    height: px-rem(32px);
+
+    &--color {
+        fill: var(--primary-color);
+    }
+
+    &__item {
+        min-width: px-rem(100px);
+        min-height: px-rem(100px);
+        width: px-rem(100px);
+        height: px-rem(100px);
+    }
+}

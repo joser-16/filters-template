@@ -1,0 +1,48 @@
+.button {
+  cursor       : pointer;
+  font-family  : inherit;
+  color        : var(--background);
+  display      : inline-block;
+  border-radius: .25rem;
+  padding      : .375em .75em;
+  font-weight  : var(--fw-bold);
+  transition   : background .3s linear;
+  background   : var(--primary-color);
+  outline      : none;
+  border       : none;
+  font-size    : var(--fz-body);
+
+  &:hover {
+    background: var(--primary-color);
+    color     : var(--background);
+  }
+
+  &-sm {
+    font-size: var(--fz-small);
+    padding  : .25em .5em;
+  }
+
+  &-lg {
+    padding  : .5em 1em;
+    font-size: var(--fz-h3);
+  }
+
+  &-ghost {
+    background: none;
+    border    : 2px solid var(--primary-color);
+    color     : var(--primary-color);
+  }
+
+  &-success {
+    background: var(--accent-green);
+
+    &:hover {
+      background: var(--accent-green);
+    }
+  }
+
+  &__icon {
+    width : .75em;
+    height: .75em;
+  }
+}
