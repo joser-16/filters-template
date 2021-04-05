@@ -40,16 +40,16 @@
     </header>
     
     <main>
-      <section class="container mt-8">
+      <div class="container mt-8">
         <div class="l-grid flex-items-center">
           <div class="l-col-12 l-col-sm-8 l-col-md-10">
             <h2 class="my-2 fw-bold"> <span class="badge badge-success">23</span> Resultados</h2>
           </div>
           <div class="l-col-12 l-col-sm-4 l-col-md-2">
-            <form action="" class="form">
+            <form class="form">
               <div class="flex flex-items-center">
                 <svg class="icon icon-success icon-large mr-1"><use href="assets/icons/icons.svg#money"/></svg>
-                <select name="" class="form__input form__input--select m-0">
+                <select name="js-currency" class="form__input form__input--select m-0">
                   <option value="">USD</option>
                   <option value="">EUR</option>
                   <option value="">MXN</option>
@@ -58,13 +58,13 @@
             </form>
           </div>
         </div>
-      </section>
+      </div>
 
       <div class="container">
         <div class="divider mb-4"></div>
       </div>
 
-      <section class="container">
+      <div class="container">
         <div class="l-grid l-grid-double-gap-md">
           <aside class="l-col-12 l-col-md-4">
             <div class="flex flex-items-center mb-2">
@@ -81,17 +81,14 @@
               
               <form class="form js-form-price">
                 <div class="l-grid">
-                  <div class="l-col-6">
-                    <div class="form__group">
-                      <input class="form__input" type="number" placeholder="Precio mínimo">
-                    </div>
+                  <div class="form__group l-col-12 l-col-sm-6">
+                    <input class="form__input" type="number" placeholder="Desde..." name="js-min-price">
                   </div>
-                  <div class="l-col-6">
-                    <div class="form__group">
-                      <input class="form__input" type="number" placeholder="Precio máximo">
-                    </div>
+                  <div class="form__group l-col-12 l-col-sm-6">
+                    <input class="form__input" type="number" placeholder="Hasta..." name="js-max-price">
                   </div>
                 </div>
+
                 <div class="text-center">
                   <button type="submit" class="button button-success d-block wt-100 sm-wt-50 md-wt-100 mt-2">Aplicar precio</button>
                 </div>
@@ -101,7 +98,7 @@
           <div class="l-col-12 l-col-md-8">
             <article class="h-card h-card--featured mb-4">
               <div class="h-card__image p-1">
-                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+                <img src="assets/images/nasa-logo-1.png" alt="Card image">
               </div>
               <div class="h-card__content p-1">
                 <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
@@ -122,7 +119,7 @@
             </article>
             <article class="h-card mb-4">
               <div class="h-card__image p-1">
-                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+                <img src="assets/images/nasa-logo-1.png" alt="Card image">
               </div>
               <div class="h-card__content p-1">
                 <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
@@ -143,7 +140,7 @@
             </article>
             <article class="h-card mb-4">
               <div class="h-card__image p-1">
-                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+                <img src="assets/images/nasa-logo-1.png" alt="Card image">
               </div>
               <div class="h-card__content p-1">
                 <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
@@ -164,7 +161,7 @@
             </article>
             <article class="h-card mb-4">
               <div class="h-card__image p-1">
-                <img src="assets/images/nasa-logo-1.png" width="200px" alt="">
+                <img src="assets/images/nasa-logo-1.png" alt="Card image">
               </div>
               <div class="h-card__content p-1">
                 <h3 class="h-card__title">Lorem, ipsum dolor.</h3>
@@ -185,7 +182,7 @@
             </article>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <script src="js/main.js"></script>

@@ -28,6 +28,10 @@
     height       : px-rem(48px);
   }
 
+  &__input:focus {
+    border-color: var(--accent-lightblue);
+  }
+
   &__input:invalid {
     color       : var(--error-color);
     border-color: var(--error-color);
@@ -46,6 +50,8 @@
   }
 
   &__input--textarea {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     min-height: px-rem(64px);
     height    : px-rem(128px);
     resize    : vertical;
