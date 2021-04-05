@@ -46,10 +46,10 @@
             <h2 class="my-2 fw-bold"> <span class="badge badge-success">23</span> Resultados</h2>
           </div>
           <div class="l-col-12 l-col-sm-4 l-col-md-2">
-            <form class="form">
+            <form action="" class="form">
               <div class="flex flex-items-center">
                 <svg class="icon icon-success icon-large mr-1"><use href="assets/icons/icons.svg#money"/></svg>
-                <select name="js-currency" class="form__input form__input--select m-0">
+                <select name="" class="form__input form__input--select m-0">
                   <option value="">USD</option>
                   <option value="">EUR</option>
                   <option value="">MXN</option>
@@ -81,14 +81,17 @@
               
               <form class="form js-form-price">
                 <div class="l-grid">
-                  <div class="form__group l-col-12 l-col-sm-6">
-                    <input class="form__input" type="number" placeholder="Desde..." name="js-min-price">
+                  <div class="l-col-6">
+                    <div class="form__group">
+                      <input class="form__input" type="number" min="0" placeholder="Precio mínimo">
+                    </div>
                   </div>
-                  <div class="form__group l-col-12 l-col-sm-6">
-                    <input class="form__input" type="number" placeholder="Hasta..." name="js-max-price">
+                  <div class="l-col-6">
+                    <div class="form__group">
+                      <input class="form__input" type="number" min="0" placeholder="Precio máximo">
+                    </div>
                   </div>
                 </div>
-
                 <div class="text-center">
                   <button type="submit" class="button button-success d-block wt-100 sm-wt-50 md-wt-100 mt-2">Aplicar precio</button>
                 </div>
@@ -106,6 +109,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi incidunt expedita ipsa eligendi perferendis molestias. Aliquam repellat blanditiis accusantium magni?
                 </p>
               </div>
+
 
               <div class="flex flex-column flex-between p-1 h-100 text-center">
                 <p class="fz-h3 fw-bold">39.99$ <span class="fz-small fw-regular">/ mes</span></p>
