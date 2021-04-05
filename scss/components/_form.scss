@@ -1,6 +1,7 @@
 .form {
   &__group {
     display: block;
+    margin-bottom: .5rem;
   }
 
   &__error-message {
@@ -14,16 +15,16 @@
   }
 
   &__input {
-    margin-bottom: .5rem;
     background   : var(--surface-high);
     font-family  : inherit;
     width        : 100%;
     padding      : 0 1rem;
-    border-radius: .25rem;
+    border-radius: $border-radius;
     outline      : none;
     border       : none;
     border       : 1px solid var(--text-emphasis-disabled);
-    color        : var(--text-emphasis-medium);
+    color        : var(--text-emphasis-high);
+    font-weight  : 500;
     height       : px-rem(48px);
   }
 

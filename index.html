@@ -43,16 +43,18 @@
       <section class="container mt-8">
         <div class="l-grid flex-items-center">
           <div class="l-col-12 l-col-sm-8 l-col-md-10">
-            <h2 class="my-2 fw-medium"> <span class="badge badge-success">23</span> Resultados</h2>
+            <h2 class="my-2 fw-bold"> <span class="badge badge-success">23</span> Resultados</h2>
           </div>
           <div class="l-col-12 l-col-sm-4 l-col-md-2">
-            <form action="" class="form flex flex-items-center">
-              <svg class="icon icon-success mr-1"><use href="assets/icons/icons.svg#money"/></svg>
-              <select name="" class="form__input form__input--select">
-                <option value="">USD</option>
-                <option value="">EUR</option>
-                <option value="">MXN</option>
-              </select>
+            <form action="" class="form">
+              <div class="flex flex-items-center">
+                <svg class="icon icon-success icon-large mr-1"><use href="assets/icons/icons.svg#money"/></svg>
+                <select name="" class="form__input form__input--select m-0">
+                  <option value="">USD</option>
+                  <option value="">EUR</option>
+                  <option value="">MXN</option>
+                </select>
+              </div>
             </form>
           </div>
         </div>
@@ -66,12 +68,12 @@
         <div class="l-grid l-grid-double-gap-md">
           <aside class="l-col-12 l-col-md-4">
             <div class="flex flex-items-center mb-2">
-              <svg class="icon icon-high-emphasis mr-1"><use href="assets/icons/icons.svg#filter"/></svg>
+              <svg class="icon icon-high-emphasis icon-medium mr-1"><use href="assets/icons/icons.svg#filter"/></svg>
               <h3 class="m-0">Filtros</h3>
             </div>
             <div class="card mb-4">
               <div class="card__title flex flex-items-center">
-                <svg class="icon mr-1"><use href="assets/icons/icons.svg#price"/></svg>
+                <svg class="icon icon-success icon-small mr-1"><use href="assets/icons/icons.svg#price"/></svg>
                 <h3 class="m-0">Precio <span class="fz-small fw-light">— (USD)</span></h3>
               </div>
 
@@ -91,7 +93,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="button button-success d-block wt-50 md-wt-100 mt-2">Aplicar precio</button>
+                  <button type="submit" class="button button-success d-block wt-100 sm-wt-50 md-wt-100 mt-2">Aplicar precio</button>
                 </div>
               </form>
             </div>

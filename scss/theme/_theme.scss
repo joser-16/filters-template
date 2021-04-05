@@ -59,21 +59,3 @@
     color: var(--text-emphasis-disabled);
   }
 }
-
-.icon {
-  &-light {
-    fill: #fff;
-  }
-
-  &-success {
-    fill: var(--accent-green)
-  }
-
-  &-high-emphasis {
-    fill: var(--text-emphasis-high)
-  }
-
-  &-medium-emphasis {
-    fill: var(--text-emphasis-medium)
-  }
-}

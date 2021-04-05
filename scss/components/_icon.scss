@@ -1,17 +1,32 @@
 .icon {
-    min-width: px-rem(32px);
-    min-height: px-rem(32px);
-    width: px-rem(32px);
-    height: px-rem(32px);
+  width     : px-rem(32px);
+  height    : px-rem(32px);
 
-    &--color {
-        fill: var(--primary-color);
-    }
+  &-small {
+    @include width-height(px-rem(15px));
+  }
 
-    &__item {
-        min-width: px-rem(100px);
-        min-height: px-rem(100px);
-        width: px-rem(100px);
-        height: px-rem(100px);
-    }
+  &-medium {
+    @include width-height(px-rem(30px));
+  }
+
+  &-large {
+    @include width-height(px-rem(60px));
+  }
+
+  &-light {
+    fill: #fff;
+  }
+
+  &-success {
+    fill: var(--accent-green)
+  }
+
+  &-high-emphasis {
+    fill: var(--text-emphasis-high)
+  }
+
+  &-medium-emphasis {
+    fill: var(--text-emphasis-medium)
+  }
 }

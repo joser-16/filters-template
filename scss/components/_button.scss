@@ -3,7 +3,7 @@
   font-family  : inherit;
   color        : var(--background);
   display      : inline-block;
-  border-radius: .25rem;
+  border-radius: $border-radius;
   padding      : .375em .75em;
   font-weight  : var(--fw-bold);
   transition   : background .3s linear;
@@ -11,6 +11,7 @@
   outline      : none;
   border       : none;
   font-size    : var(--fz-body);
+  fill         : #fff;
 
   &:hover {
     background: var(--primary-color);
@@ -31,10 +32,12 @@
     background: none;
     border    : 2px solid var(--primary-color);
     color     : var(--primary-color);
+    fill      : var(--primary-color);
   }
 
   &-success {
     background: var(--accent-green);
+    fill      : #fff;
 
     &:hover {
       background: var(--accent-green);
