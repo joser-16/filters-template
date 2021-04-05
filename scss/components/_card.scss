@@ -31,6 +31,10 @@
     border: 2px solid var(--accent-lightblue);
   }
 
+  &__image {
+    max-width: px-rem(200px);
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 1rem;
